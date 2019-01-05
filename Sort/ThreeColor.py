@@ -10,27 +10,27 @@
 
 class ThreeColor(object):
 
-    def three_color(self, array_A, n):
+    def three_color(self, A, n):
         """
         :type n: range of array
-        :type array_A: array
+        :type A: array
         """
-        if (array_A == None or len(array_A) < 2):
-            return array_A
+        if (A == None or len(A) < 2):
+            return A
         left = -1
         index = 0
         right = n
 
         while (index < right):
-            if (array_A[index] == 0):
+            if (A[index] == 0):
                 left = left+1
-                array_A[left], array_A[index] = array_A[index], array_A[left]
-            elif (array_A[index] == 2):
+                A[left], A[index] = A[index], A[left]
+            elif (A[index] == 2):
                 right = right-1
-                array_A[right], array_A[index] = array_A[index], array_A[right]
+                A[right], A[index] = A[index], A[right]
             else:
                 index = index + 1
-        return array_A
+        return A
 
 
 if __name__ == '__main__':
