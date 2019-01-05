@@ -25,6 +25,7 @@ class ThreeColor(object):
             if (A[index] == 0):
                 left = left+1
                 A[left], A[index] = A[index], A[left]
+                index +=1
             elif (A[index] == 2):
                 right = right-1
                 A[right], A[index] = A[index], A[right]
