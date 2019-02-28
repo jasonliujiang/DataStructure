@@ -13,6 +13,7 @@ class TreeNode:
 
 
 class IdenticalTree:
+    # Java中要用KMP算法
     def chkIdentical(self, A, B):
         listA = self.di(A)
         listB = self.di(B)
@@ -20,6 +21,7 @@ class IdenticalTree:
             return True
         return False
 
+    # 将树结构序列化成数组
     def di(self, A):
         if A == None:
             return "#"
