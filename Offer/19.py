@@ -15,3 +15,8 @@ class Solution:
 
         restult = []
 
+if __name__ == '__main__':
+    s = Solution()
+    s.printMatrix()
+
+
